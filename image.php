@@ -7,7 +7,7 @@
  * @since Wp Theme 1.0
  */
 
-get_header(); ?>
+get_template_part('partials/header'); ?>
 
 		<div id="primary" class="image-attachment">
 			<div id="content" role="main">
@@ -101,4 +101,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>

@@ -15,9 +15,9 @@
  */
 
 // Enqueue showcase script for the slider
-wp_enqueue_script( 'template-showcase', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
+wp_enqueue_script( 'template-showcase', get_template_directory_uri() . '/assets/js/showcase.js', array( 'jquery' ), '2011-04-28' );
 
-get_header(); ?>
+get_template_part('partials/header'); ?>
 
 		<div id="primary" class="showcase">
 			<div id="content" role="main">
@@ -224,4 +224,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>

@@ -89,10 +89,10 @@ function template_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// This theme uses wp_nav_menu() in one location.
-	register_nav_menu(
-		'primary', __( 'Primary Menu', 'template' ),
-		'secondery', __( 'Secondery Menu', 'template' )
-	 );
+	register_nav_menus(array(
+		'primary' => __( 'Primary Menu', 'template' ),
+		'secondery'=>  __( 'Secondery Menu', 'template' )
+		));
 
 	// Add support for a variety of post formats
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );

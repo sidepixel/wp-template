@@ -8,7 +8,7 @@
  * @since Wp Theme 1.0
  */
 
-get_header(); ?>
+get_template_part('partials/header'); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
@@ -23,5 +23,5 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_template_part('partials/sidebar'); ?>
+<?php get_template_part('partials/footer'); ?>

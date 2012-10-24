@@ -23,8 +23,8 @@
 			?>
 
 			<div id="site-generator">
-				<?php do_action( 'template_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'template' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'template' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'template' ), 'WordPress' ); ?></a>
+				<?php //do_action( 'template_credits' ); ?>
+				<?php _e( 'Proudly powered by ', 'template'  ); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/?utm_source=sidepixel_seeding&utm_medium=wp_sketch&utm_campaign=sidepixel_wordpress_development', 'template' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'template' ); ?>" rel="generator"><?php printf( 'WordPress' ); ?></a> and the Sketch by <a href="http://sidepixel.com/?utm_source=sidepixel_seeding&utm_medium=wp_sketch&utm_campaign=sidepixel_wordpress_development">SidePixel</a>.
 			</div>
 	</footer><!-- #footer -->
 </div><!-- #page -->
