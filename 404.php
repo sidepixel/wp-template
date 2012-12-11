@@ -7,7 +7,7 @@
  * @since Wp Theme 1.0
  */
 
-get_header('partials/header'); ?>
+get_template_part('partials/header'); ?>
 
 	<div id="primary">
 		<div id="content" role="main">
